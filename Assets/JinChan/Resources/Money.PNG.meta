@@ -1,0 +1,1092 @@
+fileFormatVersion: 2
+guid: ed6e3a30018c02d499d1fdfcf665e93c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2161427974610804352
+    second: Crush Money_0
+  - first:
+      213: -8557507088772448490
+    second: Crush Money_1
+  - first:
+      213: 997633539451194465
+    second: Crush Money_2
+  - first:
+      213: -6445485791530602520
+    second: Crush Money_3
+  - first:
+      213: 5453845788659691934
+    second: Crush Money_4
+  - first:
+      213: -6003831630899233410
+    second: Crush Money_5
+  - first:
+      213: -1307066031547063494
+    second: Crush Money_6
+  - first:
+      213: 8097852259225189515
+    second: Crush Money_7
+  - first:
+      213: 1430413099971016790
+    second: Crush Money_8
+  - first:
+      213: 3812912113824254804
+    second: Crush Money_9
+  - first:
+      213: 442860582953958319
+    second: Crush Money_10
+  - first:
+      213: 2915125155205257906
+    second: Crush Money_11
+  - first:
+      213: 4556397235987405577
+    second: Crush Money_12
+  - first:
+      213: -8322256143694555264
+    second: Crush Money_13
+  - first:
+      213: 7928181779780860541
+    second: Crush Money_14
+  - first:
+      213: -1542894985025229645
+    second: Crush Money_15
+  - first:
+      213: -3881592998157242151
+    second: Crush Money_16
+  - first:
+      213: -7888274194348676991
+    second: Crush Money_17
+  - first:
+      213: -5630600033486224371
+    second: Crush Money_18
+  - first:
+      213: 6427474714688414739
+    second: Crush Money_19
+  - first:
+      213: 6363852609044473829
+    second: Crush Money_20
+  - first:
+      213: -8802917679290556931
+    second: Crush Money_21
+  - first:
+      213: -7470751095697933153
+    second: Crush Money_22
+  - first:
+      213: -8592152880550296820
+    second: Crush Money_23
+  - first:
+      213: 9046474502142417884
+    second: Crush Money_24
+  - first:
+      213: 1808041164263484869
+    second: Crush Money_25
+  - first:
+      213: 7054820885471443679
+    second: Crush Money_26
+  - first:
+      213: 2457833819420572522
+    second: Crush Money_27
+  - first:
+      213: -5651197601874598574
+    second: Crush Money_28
+  - first:
+      213: -887685154037393700
+    second: Crush Money_29
+  - first:
+      213: -4513555865311353013
+    second: Crush Money_30
+  - first:
+      213: 1354068460061574828
+    second: Crush Money_31
+  - first:
+      213: -6820739772388444958
+    second: Crush Money_32
+  - first:
+      213: 970658169344035465
+    second: Crush Money_33
+  - first:
+      213: -4184341746005001877
+    second: Crush Money_34
+  - first:
+      213: 5650891190183428420
+    second: Crush Money_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1900
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Crush Money_0
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 1354
+        width: 911
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0812bb575b01102e0800000000000000
+      internalID: -2161427974610804352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_1
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 1863
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61fb4d274a0ad3980800000000000000
+      internalID: -8557507088772448490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_2
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1247
+        width: 682
+        height: 558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c010f1b6e48dd00800000000000000
+      internalID: 997633539451194465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_3
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1679
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8efadfe72d80d86a0800000000000000
+      internalID: -6445485791530602520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_4
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1690
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9132dc59d3ffab40800000000000000
+      internalID: 5453845788659691934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_5
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1631
+        width: 10
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d3ffcf0fa1eaca0800000000000000
+      internalID: -6003831630899233410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_6
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 1579
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3368a39e5e5cdde0800000000000000
+      internalID: -1307066031547063494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_7
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1429
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c36bab9b9516070800000000000000
+      internalID: 8097852259225189515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_8
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1333
+        width: 33
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65876d1c229d9d310800000000000000
+      internalID: 1430413099971016790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_9
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 789
+        width: 1016
+        height: 607
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b4748ad5f2ae430800000000000000
+      internalID: 3812912113824254804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_10
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 1289
+        width: 19
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab3ef39a5b552600800000000000000
+      internalID: 442860582953958319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_11
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1292
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba90d732ea947820800000000000000
+      internalID: 2915125155205257906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_12
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1270
+        width: 9
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90bd99235239b3f30800000000000000
+      internalID: 4556397235987405577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_13
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 1247
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08716496128618c80800000000000000
+      internalID: -8322256143694555264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_14
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 709
+        width: 478
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7aff8ac25f860e60800000000000000
+      internalID: 7928181779780860541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_15
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 1090
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bce6db8f29869ae0800000000000000
+      internalID: -1542894985025229645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1101
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0b136dbbfc12ac0800000000000000
+      internalID: -3881592998157242151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_17
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 834
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18867f20a68378290800000000000000
+      internalID: -7888274194348676991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_18
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 820
+        width: 39
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0440cb0a171cd1b0800000000000000
+      internalID: -5630600033486224371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_19
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 811
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314eec3e23af23950800000000000000
+      internalID: 6427474714688414739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_20
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 803
+        width: 37
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7e9051b32f05850800000000000000
+      internalID: 6363852609044473829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_21
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 785
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd51e2b201c5d580800000000000000
+      internalID: -8802917679290556931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_22
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 25
+        width: 850
+        height: 716
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c709fc57f825890800000000000000
+      internalID: -7470751095697933153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_23
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 724
+        width: 9
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0343f27a7a82c880800000000000000
+      internalID: -8592152880550296820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_24
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 703
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdbd3d121a88b8d70800000000000000
+      internalID: 9046474502142417884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_25
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 429
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd65370cd3771910800000000000000
+      internalID: 1808041164263484869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_26
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 375
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda3880a732c7e160800000000000000
+      internalID: 7054820885471443679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_27
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 234
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b318b26dafb1220800000000000000
+      internalID: 2457833819420572522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_28
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 12
+        width: 414
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 255a9b0f8b9e291b0800000000000000
+      internalID: -5651197601874598574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_29
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 173
+        width: 68
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd696393e0f4ea3f0800000000000000
+      internalID: -887685154037393700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_30
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 146
+        width: 29
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b476c36bad0ac51c0800000000000000
+      internalID: -4513555865311353013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_31
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 72
+        width: 92
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca6c78b171e9ac210800000000000000
+      internalID: 1354068460061574828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_32
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 49
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e47869905dd751a0800000000000000
+      internalID: -6820739772388444958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_33
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 4
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a05165678787d00800000000000000
+      internalID: 970658169344035465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_34
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 0
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69b8820a5b3ee5c0800000000000000
+      internalID: -4184341746005001877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush Money_35
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 11
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4418447099ffb6e40800000000000000
+      internalID: 5650891190183428420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Crush Money_0: -2161427974610804352
+      Crush Money_1: -8557507088772448490
+      Crush Money_10: 442860582953958319
+      Crush Money_11: 2915125155205257906
+      Crush Money_12: 4556397235987405577
+      Crush Money_13: -8322256143694555264
+      Crush Money_14: 7928181779780860541
+      Crush Money_15: -1542894985025229645
+      Crush Money_16: -3881592998157242151
+      Crush Money_17: -7888274194348676991
+      Crush Money_18: -5630600033486224371
+      Crush Money_19: 6427474714688414739
+      Crush Money_2: 997633539451194465
+      Crush Money_20: 6363852609044473829
+      Crush Money_21: -8802917679290556931
+      Crush Money_22: -7470751095697933153
+      Crush Money_23: -8592152880550296820
+      Crush Money_24: 9046474502142417884
+      Crush Money_25: 1808041164263484869
+      Crush Money_26: 7054820885471443679
+      Crush Money_27: 2457833819420572522
+      Crush Money_28: -5651197601874598574
+      Crush Money_29: -887685154037393700
+      Crush Money_3: -6445485791530602520
+      Crush Money_30: -4513555865311353013
+      Crush Money_31: 1354068460061574828
+      Crush Money_32: -6820739772388444958
+      Crush Money_33: 970658169344035465
+      Crush Money_34: -4184341746005001877
+      Crush Money_35: 5650891190183428420
+      Crush Money_4: 5453845788659691934
+      Crush Money_5: -6003831630899233410
+      Crush Money_6: -1307066031547063494
+      Crush Money_7: 8097852259225189515
+      Crush Money_8: 1430413099971016790
+      Crush Money_9: 3812912113824254804
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

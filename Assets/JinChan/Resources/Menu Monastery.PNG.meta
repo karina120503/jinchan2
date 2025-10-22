@@ -1,0 +1,2106 @@
+fileFormatVersion: 2
+guid: 816e13d229d080242b7508a6f4c0a9f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8379325848429425065
+    second: Menu Monastery_0
+  - first:
+      213: 6447637365116151378
+    second: Menu Monastery_1
+  - first:
+      213: 8554466699619599085
+    second: Menu Monastery_2
+  - first:
+      213: -6597113985811189594
+    second: Menu Monastery_3
+  - first:
+      213: 6869984310514881279
+    second: Menu Monastery_4
+  - first:
+      213: 2318607092300192189
+    second: Menu Monastery_5
+  - first:
+      213: -2066954688228468021
+    second: Menu Monastery_6
+  - first:
+      213: -6073151123535247806
+    second: Menu Monastery_7
+  - first:
+      213: 6299155766102121495
+    second: Menu Monastery_8
+  - first:
+      213: 1493849472649856398
+    second: Menu Monastery_9
+  - first:
+      213: 7261083030596627331
+    second: Menu Monastery_10
+  - first:
+      213: -2870897724146119660
+    second: Menu Monastery_11
+  - first:
+      213: 6455730516313124622
+    second: Menu Monastery_12
+  - first:
+      213: -429791641868837668
+    second: Menu Monastery_13
+  - first:
+      213: 2174611531997013945
+    second: Menu Monastery_14
+  - first:
+      213: 6226730569575979241
+    second: Menu Monastery_15
+  - first:
+      213: -3758877460663825599
+    second: Menu Monastery_16
+  - first:
+      213: -8383869273983678531
+    second: Menu Monastery_17
+  - first:
+      213: 5747368672941614783
+    second: Menu Monastery_18
+  - first:
+      213: -876346368211254078
+    second: Menu Monastery_19
+  - first:
+      213: 5046375772836360162
+    second: Menu Monastery_20
+  - first:
+      213: 7655170627257952419
+    second: Menu Monastery_21
+  - first:
+      213: -4769304803531360916
+    second: Menu Monastery_22
+  - first:
+      213: -4864567820249907972
+    second: Menu Monastery_23
+  - first:
+      213: -2956159855206753014
+    second: Menu Monastery_24
+  - first:
+      213: -6983154892459092480
+    second: Menu Monastery_25
+  - first:
+      213: -6730761437699831154
+    second: Menu Monastery_26
+  - first:
+      213: -8077507844416601561
+    second: Menu Monastery_27
+  - first:
+      213: -8431452524511312267
+    second: Menu Monastery_28
+  - first:
+      213: 7838626944939276670
+    second: Menu Monastery_29
+  - first:
+      213: -2582775681635886086
+    second: Menu Monastery_30
+  - first:
+      213: 6119081056086655991
+    second: Menu Monastery_31
+  - first:
+      213: 4520706778698182962
+    second: Menu Monastery_32
+  - first:
+      213: -4192125454239300680
+    second: Menu Monastery_33
+  - first:
+      213: -4347191588301143604
+    second: Menu Monastery_34
+  - first:
+      213: -9048376349373603376
+    second: Menu Monastery_35
+  - first:
+      213: -429194698629891506
+    second: Menu Monastery_36
+  - first:
+      213: -9088567314684092892
+    second: Menu Monastery_37
+  - first:
+      213: -8988423120159070765
+    second: Menu Monastery_38
+  - first:
+      213: 1174329220961680669
+    second: Menu Monastery_39
+  - first:
+      213: 3364924455512725866
+    second: Menu Monastery_40
+  - first:
+      213: 3027980409494075251
+    second: Menu Monastery_41
+  - first:
+      213: -8947460858506852436
+    second: Menu Monastery_42
+  - first:
+      213: -5941887883448820833
+    second: Menu Monastery_43
+  - first:
+      213: -9085374024440976388
+    second: Menu Monastery_44
+  - first:
+      213: -4027051364027130406
+    second: Menu Monastery_45
+  - first:
+      213: 2266784322050832798
+    second: Menu Monastery_46
+  - first:
+      213: 1092946566579461255
+    second: Menu Monastery_47
+  - first:
+      213: -1965699376476373609
+    second: Menu Monastery_48
+  - first:
+      213: -9046965342806528025
+    second: Menu Monastery_49
+  - first:
+      213: -1690758355074112450
+    second: Menu Monastery_50
+  - first:
+      213: -5790380815026212015
+    second: Menu Monastery_51
+  - first:
+      213: 3092505091081372771
+    second: Menu Monastery_52
+  - first:
+      213: -3565133975328389797
+    second: Menu Monastery_53
+  - first:
+      213: 3974101213089893712
+    second: Menu Monastery_54
+  - first:
+      213: -5369067779109661108
+    second: Menu Monastery_55
+  - first:
+      213: 958679227060054583
+    second: Menu Monastery_56
+  - first:
+      213: -3312611169996435807
+    second: Menu Monastery_57
+  - first:
+      213: -6869873708427123789
+    second: Menu Monastery_58
+  - first:
+      213: -5865373873071790499
+    second: Menu Monastery_59
+  - first:
+      213: -8464750205316108215
+    second: Menu Monastery_60
+  - first:
+      213: 6997121713941837093
+    second: Menu Monastery_61
+  - first:
+      213: -5008201778525725909
+    second: Menu Monastery_62
+  - first:
+      213: -6588599056704812371
+    second: Menu Monastery_63
+  - first:
+      213: -7656030340660128201
+    second: Menu Monastery_64
+  - first:
+      213: 7888979240277742768
+    second: Menu Monastery_65
+  - first:
+      213: 1162108856282065304
+    second: Menu Monastery_66
+  - first:
+      213: -7850981753209535066
+    second: Menu Monastery_67
+  - first:
+      213: 9141572557565088036
+    second: Menu Monastery_68
+  - first:
+      213: 2167536989847236258
+    second: Menu Monastery_69
+  - first:
+      213: 1263736475281162521
+    second: Menu Monastery_70
+  - first:
+      213: 1954700398420139168
+    second: Menu Monastery_71
+  - first:
+      213: 998355866513123867
+    second: Menu Monastery_72
+  - first:
+      213: 3528917616608384431
+    second: Menu Monastery_73
+  - first:
+      213: 5443069895570155422
+    second: Menu Monastery_74
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Menu Monastery_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2048
+        height: 2048
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e8d135987a6bb80800000000000000
+      internalID: -8379325848429425065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_1
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 2007
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256a844c50c9a7950800000000000000
+      internalID: 6447637365116151378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_2
+      rect:
+        serializedVersion: 2
+        x: 2006
+        y: 1912
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de20cb9c32297b670800000000000000
+      internalID: 8554466699619599085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_3
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 1904
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a076fc68c75274a0800000000000000
+      internalID: -6597113985811189594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_4
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1907
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff21fb8e456175f50800000000000000
+      internalID: 6869984310514881279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_5
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 1882
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9114eadd85d2020800000000000000
+      internalID: 2318607092300192189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_6
+      rect:
+        serializedVersion: 2
+        x: 2032
+        y: 1773
+        width: 16
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca505989a3b053e0800000000000000
+      internalID: -2066954688228468021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_7
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 1687
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 246ca66ea35d7bba0800000000000000
+      internalID: -6073151123535247806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_8
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 1679
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71cde5f7bc81b6750800000000000000
+      internalID: 6299155766102121495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_9
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 1562
+        width: 52
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85033d3e283bb410800000000000000
+      internalID: 1493849472649856398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_10
+      rect:
+        serializedVersion: 2
+        x: 2037
+        y: 1672
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b2453ab8c84c460800000000000000
+      internalID: 7261083030596627331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_11
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1544
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c0bc50bb58828d0800000000000000
+      internalID: -2870897724146119660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_12
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 1537
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f2e7e53bc579950800000000000000
+      internalID: 6455730516313124622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_13
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1535
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdcd9f267c2190af0800000000000000
+      internalID: -429791641868837668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_14
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 1501
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b76621baa5cd2e10800000000000000
+      internalID: 2174611531997013945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_15
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1496
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e854af567ac96650800000000000000
+      internalID: 6226730569575979241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_16
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 1482
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b09ea6dd8c5dbc0800000000000000
+      internalID: -3758877460663825599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_17
+      rect:
+        serializedVersion: 2
+        x: 2006
+        y: 1440
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db704e0a05386ab80800000000000000
+      internalID: -8383869273983678531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_18
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 1376
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb6a4ef6b51c2cf40800000000000000
+      internalID: 5747368672941614783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_19
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 1366
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c480960f9796d3f0800000000000000
+      internalID: -876346368211254078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_20
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1363
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef6c0f4704580640800000000000000
+      internalID: 5046375772836360162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_21
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1314
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8e6bc6021ac3a60800000000000000
+      internalID: 7655170627257952419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_22
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 1319
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65f2ffcc8600ddb0800000000000000
+      internalID: -4769304803531360916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_23
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 1251
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc353057559d7cb0800000000000000
+      internalID: -4864567820249907972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_24
+      rect:
+        serializedVersion: 2
+        x: 2043
+        y: 1246
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d912b264c99f6d0800000000000000
+      internalID: -2956159855206753014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_25
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1233
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 006d177af99d61f90800000000000000
+      internalID: -6983154892459092480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_26
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 1235
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a010e22288792a0800000000000000
+      internalID: -6730761437699831154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_27
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1223
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7220e17796de6ef80800000000000000
+      internalID: -8077507844416601561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_28
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 1218
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576cee7c9967dfa80800000000000000
+      internalID: -8431452524511312267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_29
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 1206
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7939e3fca568cc60800000000000000
+      internalID: 7838626944939276670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_30
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 1133
+        width: 72
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb5391a333282cd0800000000000000
+      internalID: -2582775681635886086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_31
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 1106
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f30edbdcc75be450800000000000000
+      internalID: 6119081056086655991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_32
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 1010
+        width: 88
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231710e0dd6ccbe30800000000000000
+      internalID: 4520706778698182962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_33
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 1002
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b381363c1492d5c0800000000000000
+      internalID: -4192125454239300680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_34
+      rect:
+        serializedVersion: 2
+        x: 2020
+        y: 993
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc18eb8684caba3c0800000000000000
+      internalID: -4347191588301143604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_35
+      rect:
+        serializedVersion: 2
+        x: 2032
+        y: 992
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d16a8d86a5bd6280800000000000000
+      internalID: -9048376349373603376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_36
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 984
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a3fa012b13b0af0800000000000000
+      internalID: -429194698629891506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_37
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 918
+        width: 19
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e570b3e2ceed180800000000000000
+      internalID: -9088567314684092892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_38
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 906
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d5a2008bc4b24380800000000000000
+      internalID: -8988423120159070765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_39
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 876
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d38c0643e0c4010800000000000000
+      internalID: 1174329220961680669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_40
+      rect:
+        serializedVersion: 2
+        x: 2037
+        y: 795
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a695cd2d6fc92be20800000000000000
+      internalID: 3364924455512725866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_41
+      rect:
+        serializedVersion: 2
+        x: 2043
+        y: 793
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3777cb6b32c850a20800000000000000
+      internalID: 3027980409494075251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_42
+      rect:
+        serializedVersion: 2
+        x: 2037
+        y: 740
+        width: 11
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca7ccfe31cb34d380800000000000000
+      internalID: -8947460858506852436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_43
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 781
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bd5d3937c2a8da0800000000000000
+      internalID: -5941887883448820833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_44
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 761
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb62ad06744ae180800000000000000
+      internalID: -9085374024440976388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_45
+      rect:
+        serializedVersion: 2
+        x: 2043
+        y: 599
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add19e2ee1a0d18c0800000000000000
+      internalID: -4027051364027130406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_46
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 551
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99b34ab45c357f10800000000000000
+      internalID: 2266784322050832798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_47
+      rect:
+        serializedVersion: 2
+        x: 2035
+        y: 508
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c93739c1dea2f00800000000000000
+      internalID: 1092946566579461255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_48
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 526
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d3be1f4de68b4e0800000000000000
+      internalID: -1965699376476373609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_49
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 501
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef2fbe14f8b27280800000000000000
+      internalID: -9046965342806528025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_50
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 502
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e34a8cceb383988e0800000000000000
+      internalID: -1690758355074112450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_51
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 483
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1533026d35f64afa0800000000000000
+      internalID: -5790380815026212015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_52
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 409
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3640efbdef8caea20800000000000000
+      internalID: 3092505091081372771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_53
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 444
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5500efc989168ec0800000000000000
+      internalID: -3565133975328389797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_54
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 379
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d0ca36ff7d62730800000000000000
+      internalID: 3974101213089893712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_55
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 395
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c465c2b2d4d3d75b0800000000000000
+      internalID: -5369067779109661108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_56
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 387
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ae57e7da9ed4d00800000000000000
+      internalID: 958679227060054583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_57
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 377
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae0f5d11bd3702d0800000000000000
+      internalID: -3312611169996435807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_58
+      rect:
+        serializedVersion: 2
+        x: 2013
+        y: 339
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b3e765a24e49a0a0800000000000000
+      internalID: -6869873708427123789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_59
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 291
+        width: 30
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56e2bcd9810a9ea0800000000000000
+      internalID: -5865373873071790499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_60
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 253
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 940f7b3598a278a80800000000000000
+      internalID: -8464750205316108215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_61
+      rect:
+        serializedVersion: 2
+        x: 2017
+        y: 244
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 525fca16025ca1160800000000000000
+      internalID: 6997121713941837093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_62
+      rect:
+        serializedVersion: 2
+        x: 2020
+        y: 224
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b9e7b540b4f7ab0800000000000000
+      internalID: -5008201778525725909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_63
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 179
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daac2a9d0189094a0800000000000000
+      internalID: -6588599056704812371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_64
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 177
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7361753f7f050c590800000000000000
+      internalID: -7656030340660128201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_65
+      rect:
+        serializedVersion: 2
+        x: 2017
+        y: 119
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b49f2942d84b7d60800000000000000
+      internalID: 7888979240277742768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_66
+      rect:
+        serializedVersion: 2
+        x: 2021
+        y: 114
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899270109d3a02010800000000000000
+      internalID: 1162108856282065304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_67
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 111
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a54fd511b5bb0390800000000000000
+      internalID: -7850981753209535066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_68
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 98
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42150269ec36dde70800000000000000
+      internalID: 9141572557565088036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_69
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 33
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae2d5d7863a41e10800000000000000
+      internalID: 2167536989847236258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_70
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 12
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91186d2f0a1b98110800000000000000
+      internalID: 1263736475281162521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_71
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 30
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac952ae7ad702b10800000000000000
+      internalID: 1954700398420139168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_72
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 0
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a21fefe5fdadd00800000000000000
+      internalID: 998355866513123867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_73
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa59f8310eb39f030800000000000000
+      internalID: 3528917616608384431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu Monastery_74
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 0
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97e41d3b3ba98b40800000000000000
+      internalID: 5443069895570155422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Menu Monastery_0: -8379325848429425065
+      Menu Monastery_1: 6447637365116151378
+      Menu Monastery_10: 7261083030596627331
+      Menu Monastery_11: -2870897724146119660
+      Menu Monastery_12: 6455730516313124622
+      Menu Monastery_13: -429791641868837668
+      Menu Monastery_14: 2174611531997013945
+      Menu Monastery_15: 6226730569575979241
+      Menu Monastery_16: -3758877460663825599
+      Menu Monastery_17: -8383869273983678531
+      Menu Monastery_18: 5747368672941614783
+      Menu Monastery_19: -876346368211254078
+      Menu Monastery_2: 8554466699619599085
+      Menu Monastery_20: 5046375772836360162
+      Menu Monastery_21: 7655170627257952419
+      Menu Monastery_22: -4769304803531360916
+      Menu Monastery_23: -4864567820249907972
+      Menu Monastery_24: -2956159855206753014
+      Menu Monastery_25: -6983154892459092480
+      Menu Monastery_26: -6730761437699831154
+      Menu Monastery_27: -8077507844416601561
+      Menu Monastery_28: -8431452524511312267
+      Menu Monastery_29: 7838626944939276670
+      Menu Monastery_3: -6597113985811189594
+      Menu Monastery_30: -2582775681635886086
+      Menu Monastery_31: 6119081056086655991
+      Menu Monastery_32: 4520706778698182962
+      Menu Monastery_33: -4192125454239300680
+      Menu Monastery_34: -4347191588301143604
+      Menu Monastery_35: -9048376349373603376
+      Menu Monastery_36: -429194698629891506
+      Menu Monastery_37: -9088567314684092892
+      Menu Monastery_38: -8988423120159070765
+      Menu Monastery_39: 1174329220961680669
+      Menu Monastery_4: 6869984310514881279
+      Menu Monastery_40: 3364924455512725866
+      Menu Monastery_41: 3027980409494075251
+      Menu Monastery_42: -8947460858506852436
+      Menu Monastery_43: -5941887883448820833
+      Menu Monastery_44: -9085374024440976388
+      Menu Monastery_45: -4027051364027130406
+      Menu Monastery_46: 2266784322050832798
+      Menu Monastery_47: 1092946566579461255
+      Menu Monastery_48: -1965699376476373609
+      Menu Monastery_49: -9046965342806528025
+      Menu Monastery_5: 2318607092300192189
+      Menu Monastery_50: -1690758355074112450
+      Menu Monastery_51: -5790380815026212015
+      Menu Monastery_52: 3092505091081372771
+      Menu Monastery_53: -3565133975328389797
+      Menu Monastery_54: 3974101213089893712
+      Menu Monastery_55: -5369067779109661108
+      Menu Monastery_56: 958679227060054583
+      Menu Monastery_57: -3312611169996435807
+      Menu Monastery_58: -6869873708427123789
+      Menu Monastery_59: -5865373873071790499
+      Menu Monastery_6: -2066954688228468021
+      Menu Monastery_60: -8464750205316108215
+      Menu Monastery_61: 6997121713941837093
+      Menu Monastery_62: -5008201778525725909
+      Menu Monastery_63: -6588599056704812371
+      Menu Monastery_64: -7656030340660128201
+      Menu Monastery_65: 7888979240277742768
+      Menu Monastery_66: 1162108856282065304
+      Menu Monastery_67: -7850981753209535066
+      Menu Monastery_68: 9141572557565088036
+      Menu Monastery_69: 2167536989847236258
+      Menu Monastery_7: -6073151123535247806
+      Menu Monastery_70: 1263736475281162521
+      Menu Monastery_71: 1954700398420139168
+      Menu Monastery_72: 998355866513123867
+      Menu Monastery_73: 3528917616608384431
+      Menu Monastery_74: 5443069895570155422
+      Menu Monastery_8: 6299155766102121495
+      Menu Monastery_9: 1493849472649856398
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

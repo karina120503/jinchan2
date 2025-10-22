@@ -1,0 +1,1014 @@
+fileFormatVersion: 2
+guid: aeb2e548de7528d4990db1d869a10e9a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8188338880402499897
+    second: Sit_0
+  - first:
+      213: -5767305286288549674
+    second: Sit_1
+  - first:
+      213: -7273700727817649801
+    second: Sit_2
+  - first:
+      213: 8481205733760070594
+    second: Sit_3
+  - first:
+      213: -607052845791277711
+    second: Sit_4
+  - first:
+      213: 4654537200416124474
+    second: Sit_5
+  - first:
+      213: -4266362504034808397
+    second: Sit_6
+  - first:
+      213: -4083139352841087648
+    second: Sit_7
+  - first:
+      213: -919742705795658566
+    second: Sit_8
+  - first:
+      213: -6435535853839136219
+    second: Sit_9
+  - first:
+      213: -1364138391280936278
+    second: Sit_10
+  - first:
+      213: 8741318370883082496
+    second: Sit_11
+  - first:
+      213: 8272359799013755052
+    second: Sit_12
+  - first:
+      213: -2213085421400802449
+    second: Sit_13
+  - first:
+      213: 8355009276853063323
+    second: Sit_14
+  - first:
+      213: 8314680599747079133
+    second: Sit_15
+  - first:
+      213: 5797220073508386461
+    second: Sit_16
+  - first:
+      213: 3130053126380156408
+    second: Sit_17
+  - first:
+      213: -5637709038872646499
+    second: Sit_18
+  - first:
+      213: 222882127060410964
+    second: Sit_19
+  - first:
+      213: -9201543665184214024
+    second: Sit_20
+  - first:
+      213: 4735050192247465012
+    second: Sit_21
+  - first:
+      213: -9105743473329197715
+    second: Sit_22
+  - first:
+      213: -8523988266701597749
+    second: Sit_23
+  - first:
+      213: -2141434805759282366
+    second: Sit_24
+  - first:
+      213: -6985841086198223479
+    second: Sit_25
+  - first:
+      213: -1116507476324512517
+    second: Sit_26
+  - first:
+      213: 3826919485177508633
+    second: Sit_27
+  - first:
+      213: -3493352282783002850
+    second: Sit_28
+  - first:
+      213: -7336884541069910627
+    second: Sit_29
+  - first:
+      213: -3362304284759527946
+    second: Sit_30
+  - first:
+      213: 1948498152137262788
+    second: Sit_31
+  - first:
+      213: -6052013897737115067
+    second: Sit_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 2000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sit_0
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 1459
+        width: 469
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93929eaf3d2d2a170800000000000000
+      internalID: 8188338880402499897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_1
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1700
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d8d98b066a66ffa0800000000000000
+      internalID: -5767305286288549674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_2
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 1696
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771cdebc9bf9e0b90800000000000000
+      internalID: -7273700727817649801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_3
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 1706
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c376c3fdab43b570800000000000000
+      internalID: 8481205733760070594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_4
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1696
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d88be27a05397f0800000000000000
+      internalID: -607052845791277711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_5
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1699
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ee4a84cec389040800000000000000
+      internalID: 4654537200416124474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_6
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1691
+        width: 54
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd85ff18e5dac4c0800000000000000
+      internalID: -4266362504034808397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_7
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1328
+        width: 203
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0651d795466c557c0800000000000000
+      internalID: -4083139352841087648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_8
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1564
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc0b40d1ea6c33f0800000000000000
+      internalID: -919742705795658566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_9
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1559
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ac0a4ec3260b6a0800000000000000
+      internalID: -6435535853839136219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_10
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1563
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa1a335c5b911de0800000000000000
+      internalID: -1364138391280936278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_11
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1564
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 009151daeb66f4970800000000000000
+      internalID: 8741318370883082496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_12
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 1551
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8cf6a88635dc270800000000000000
+      internalID: 8272359799013755052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_13
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1546
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b3fcfd88a8941e0800000000000000
+      internalID: -2213085421400802449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_14
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 1542
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e8be9aba4f2f370800000000000000
+      internalID: 8355009276853063323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_15
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 1517
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddba1c0d3fda36370800000000000000
+      internalID: 8314680599747079133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_16
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 1504
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d963b3e11fcd37050800000000000000
+      internalID: 5797220073508386461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_17
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1482
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f57df51cbe207b20800000000000000
+      internalID: 3130053126380156408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_18
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 31
+        width: 2080
+        height: 1484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9cacfebf75d2c1b0800000000000000
+      internalID: -5637709038872646499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_19
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 1488
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 452283a1d16d71300800000000000000
+      internalID: 222882127060410964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_20
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 1507
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3f273d9cc8d4080800000000000000
+      internalID: -9201543665184214024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_21
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 1491
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4342e8eff0746b140800000000000000
+      internalID: 4735050192247465012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_22
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 1243
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6da1682e86e1a180800000000000000
+      internalID: -9105743473329197715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_23
+      rect:
+        serializedVersion: 2
+        x: 2187
+        y: 1230
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc357ad55d5b4b980800000000000000
+      internalID: -8523988266701597749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_24
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 1138
+        width: 66
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2437f05d3681842e0800000000000000
+      internalID: -2141434805759282366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_25
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1225
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d63df6b8e4d0f90800000000000000
+      internalID: -6985841086198223479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_26
+      rect:
+        serializedVersion: 2
+        x: 2106
+        y: 185
+        width: 93
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc0c94ad5e5180f0800000000000000
+      internalID: -1116507476324512517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_27
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 305
+        width: 8
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913b602fef2fb1530800000000000000
+      internalID: 3826919485177508633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_28
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 223
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f4b6d7b9e158fc0800000000000000
+      internalID: -3493352282783002850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_29
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 176
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d1973e1662e2a90800000000000000
+      internalID: -7336884541069910627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_30
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 174
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fd62283112b651d0800000000000000
+      internalID: -3362304284759527946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_31
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 176
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c685abeeb47a0b10800000000000000
+      internalID: 1948498152137262788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit_32
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 29
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ae6a9cc6de20ca0800000000000000
+      internalID: -6052013897737115067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sit_0: 8188338880402499897
+      Sit_1: -5767305286288549674
+      Sit_10: -1364138391280936278
+      Sit_11: 8741318370883082496
+      Sit_12: 8272359799013755052
+      Sit_13: -2213085421400802449
+      Sit_14: 8355009276853063323
+      Sit_15: 8314680599747079133
+      Sit_16: 5797220073508386461
+      Sit_17: 3130053126380156408
+      Sit_18: -5637709038872646499
+      Sit_19: 222882127060410964
+      Sit_2: -7273700727817649801
+      Sit_20: -9201543665184214024
+      Sit_21: 4735050192247465012
+      Sit_22: -9105743473329197715
+      Sit_23: -8523988266701597749
+      Sit_24: -2141434805759282366
+      Sit_25: -6985841086198223479
+      Sit_26: -1116507476324512517
+      Sit_27: 3826919485177508633
+      Sit_28: -3493352282783002850
+      Sit_29: -7336884541069910627
+      Sit_3: 8481205733760070594
+      Sit_30: -3362304284759527946
+      Sit_31: 1948498152137262788
+      Sit_32: -6052013897737115067
+      Sit_4: -607052845791277711
+      Sit_5: 4654537200416124474
+      Sit_6: -4266362504034808397
+      Sit_7: -4083139352841087648
+      Sit_8: -919742705795658566
+      Sit_9: -6435535853839136219
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
