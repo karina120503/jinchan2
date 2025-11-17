@@ -16,8 +16,8 @@ public class PauseMenuUI : MonoBehaviour
     public Sprite soundOnIcon;     // иконка "звук включён"
     public Sprite soundOffIcon;    // иконка "звук выключен"
 
-    private bool isPaused = false;
     private bool isMuted = false;
+    private bool isPaused = false; 
     public MusicManager musicManager;
     private Image muteButtonImage; 
 
@@ -58,12 +58,25 @@ public class PauseMenuUI : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    void ReturnToMainMenu()
+void ReturnToMainMenu()
+{
+    Time.timeScale = 1f;
+    SceneManager.LoadScene("MapMenu");
+
+    // Resume TitleScreen music if it exists
+    if (MusicContinuation.instance != null && MusicContinuation.instance.GetAudioSource() != null)
     {
-        Time.timeScale = 1f;
-        Debug.Log("Return to main menu (placeholder)");
-        SceneManager.LoadScene("MapMenu");
+        AudioSource music = MusicContinuation.instance.GetAudioSource();
+
+        // Make sure it's playing
+        if (!music.isPlaying)
+            music.Play();
+
     }
+}
+
+
+
 
     public void ToggleMute()
     {

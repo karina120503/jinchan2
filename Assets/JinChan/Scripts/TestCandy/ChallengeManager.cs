@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+using System.Collections;
+
 
 public class ChallengeManager : MonoBehaviour
 {
@@ -84,13 +86,45 @@ public class ChallengeManager : MonoBehaviour
         if (retryButton != null) retryButton.gameObject.SetActive(!showNext);
     }
 
-    private void LoadNextScene()
+private void LoadNextScene()
+{
+    // Try to find your background music AudioSource in the scene
+AudioSource bgMusic = FindFirstObjectByType<AudioSource>();
+
+    if (bgMusic != null)
+    {
+        StartCoroutine(FadeOutAndLoadNextScene(bgMusic, 2f)); // 2 seconds fade
+    }
+    else
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+}
+
 
     private void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+private IEnumerator FadeOutAndLoadNextScene(AudioSource bgMusic, float duration)
+{
+    if (bgMusic != null)
+    {
+        float startVolume = bgMusic.volume;
+
+        while (bgMusic.volume > 0f)
+        {
+            bgMusic.volume -= startVolume * Time.deltaTime / duration;
+            yield return null;
+        }
+
+        bgMusic.Stop();
+        bgMusic.volume = startVolume;
+    }
+
+    yield return new WaitForSeconds(0.3f); // small pause before transition
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+}
+
 }

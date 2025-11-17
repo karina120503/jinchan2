@@ -25,50 +25,52 @@ public class PoisonedVillage2 : MonoBehaviour
     [SerializeField] private Image backgroundOverlayImage;
     [SerializeField] AudioSource lightRain;
 
-public void ShowNarration(string text)
-{
-    charName.gameObject.SetActive(false);
-    splitter.SetActive(false);
-    narrationText.gameObject.SetActive(true);
-    dialogueText.gameObject.SetActive(false);
+    // Speed controls (as you requested)
+    public float narrationSpeed = 0.01f;  // faster running text
+    public float dialogueSpeed = 0.03f;   // dialogue stays same
 
-    narrationText.text = text;
-}
+    // Optional background music (will be faded out on scene transition if assigned)
+    public AudioSource bgMusic; // assign the background music AudioSource
 
-public void ShowDialogue(string speaker, string text)
-{
-    charName.gameObject.SetActive(true);
-    splitter.SetActive(true);
-    narrationText.gameObject.SetActive(false);
-    dialogueText.gameObject.SetActive(true);
+    void Start()
+    {
+        charName.gameObject.SetActive(false);
+        splitter.SetActive(false);
+        StartCoroutine(EventStarter());
+    }
 
-    charName.text = speaker;
-    dialogueText.text = text;
-}
+    void Update()
+    {
+        textLength = TextCreator.charCount;
+    }
 
-void Start()
-{
-    charName.gameObject.SetActive(false);
-    splitter.SetActive(false);
-    StartCoroutine(EventStarter());
-}
+    public void ShowNarration(string text)
+    {
+        charName.gameObject.SetActive(false);
+        splitter.SetActive(false);
+        narrationText.gameObject.SetActive(true);
+        dialogueText.gameObject.SetActive(false);
+        narrationText.text = text;
+    }
 
-void Update()
-{
-    // Keep your old update code
-    textLength = TextCreator.charCount;
-
-}
-
+    public void ShowDialogue(string speaker, string text)
+    {
+        charName.gameObject.SetActive(true);
+        splitter.SetActive(true);
+        narrationText.gameObject.SetActive(false);
+        dialogueText.gameObject.SetActive(true);
+        charName.text = speaker;
+        dialogueText.text = text;
+    }
 
     IEnumerator FadeInRawImage(GameObject obj, float duration)
     {
-        RawImage img = obj.GetComponent<RawImage>();
-        if (img == null) yield break; // No RawImage found
+        RawImage raw = obj.GetComponent<RawImage>();
+        if (raw == null) yield break;
 
-        Color c = img.color;
+        Color c = raw.color;
         c.a = 0f;
-        img.color = c;
+        raw.color = c;
         obj.SetActive(true);
 
         float time = 0f;
@@ -76,61 +78,55 @@ void Update()
         {
             time += Time.deltaTime;
             c.a = Mathf.Clamp01(time / duration);
-            img.color = c;
+            raw.color = c;
             yield return null;
         }
     }
 
     IEnumerator FadeOutRawImage(GameObject obj, float duration)
     {
-        RawImage img = obj.GetComponent<RawImage>();
-        if (img == null) yield break;
+        RawImage raw = obj.GetComponent<RawImage>();
+        if (raw == null) yield break;
 
-        Color c = img.color;
+        Color c = raw.color;
         c.a = 1f;
-        img.color = c;
+        raw.color = c;
 
         float time = 0f;
         while (time < duration)
         {
             time += Time.deltaTime;
             c.a = Mathf.Clamp01(1 - (time / duration));
-            img.color = c;
+            raw.color = c;
             yield return null;
         }
 
         obj.SetActive(false);
     }
 
-IEnumerator CrossfadeBackground(Sprite newSprite, float duration)
-{
-    // Put the new sprite into overlay and set alpha = 0
-    backgroundOverlayImage.sprite = newSprite;
-    Color overlayColor = backgroundOverlayImage.color;
-    overlayColor.a = 0f;
-    backgroundOverlayImage.color = overlayColor;
-    backgroundOverlayImage.gameObject.SetActive(true);
-
-    float t = 0f;
-    while (t < duration)
+    IEnumerator CrossfadeBackground(Sprite newSprite, float duration)
     {
-        t += Time.deltaTime;
-        float alpha = Mathf.Clamp01(t / duration);
+        if (backgroundOverlayImage == null || backgroundImage == null) yield break;
 
-        // Fade in overlay
-        overlayColor.a = alpha;
+        backgroundOverlayImage.sprite = newSprite;
+        Color overlayColor = backgroundOverlayImage.color;
+        overlayColor.a = 0f;
         backgroundOverlayImage.color = overlayColor;
+        backgroundOverlayImage.gameObject.SetActive(true);
 
-        yield return null;
+        float t = 0f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            float alpha = Mathf.Clamp01(t / duration);
+            overlayColor.a = alpha;
+            backgroundOverlayImage.color = overlayColor;
+            yield return null;
+        }
+
+        backgroundImage.sprite = newSprite;
+        backgroundOverlayImage.gameObject.SetActive(false);
     }
-
-    // After fade, copy overlay sprite into main background
-    backgroundImage.sprite = newSprite;
-
-    // Hide overlay again
-    backgroundOverlayImage.gameObject.SetActive(false);
-}
-
 
     IEnumerator TypewriterEffect(
         TMP_Text textComponent,
@@ -146,19 +142,19 @@ IEnumerator CrossfadeBackground(Sprite newSprite, float duration)
         {
             textComponent.maxVisibleCharacters = i;
 
-            // First trigger
             if (!string.IsNullOrEmpty(triggerPhrase1) && objectToActivate1 != null)
             {
-                if (i >= fullText.IndexOf(triggerPhrase1) && !objectToActivate1.activeSelf)
+                int idx = fullText.IndexOf(triggerPhrase1);
+                if (idx >= 0 && i >= idx && !objectToActivate1.activeSelf)
                 {
                     StartCoroutine(FadeInRawImage(objectToActivate1, fadeDuration1));
                 }
             }
 
-            // Second trigger
             if (!string.IsNullOrEmpty(triggerPhrase2) && objectToActivate2 != null)
             {
-                if (i >= fullText.IndexOf(triggerPhrase2) && !objectToActivate2.activeSelf)
+                int idx2 = fullText.IndexOf(triggerPhrase2);
+                if (idx2 >= 0 && i >= idx2 && !objectToActivate2.activeSelf)
                 {
                     StartCoroutine(FadeInRawImage(objectToActivate2, fadeDuration2));
                 }
@@ -170,266 +166,335 @@ IEnumerator CrossfadeBackground(Sprite newSprite, float duration)
         textLength = fullText.Length;
     }
 
-    IEnumerator TypewriterEffectParagraphs(TMP_Text textComponent, string fullText, float delay, float sentencePause)
+    // Helpers that use the public speed variables
+    IEnumerator RunNarration(TMP_Text textComp, string text,
+                             string triggerPhrase1 = "", GameObject objectToActivate1 = null, float fadeDuration1 = 1f,
+                             string triggerPhrase2 = "", GameObject objectToActivate2 = null, float fadeDuration2 = 1f)
     {
-        textComponent.text = "";
-        string[] sentences = fullText.Split(new char[] { '.' }, System.StringSplitOptions.RemoveEmptyEntries);
+        yield return StartCoroutine(TypewriterEffect(textComp, text, narrationSpeed,
+                                                     triggerPhrase1, objectToActivate1, fadeDuration1,
+                                                     triggerPhrase2, objectToActivate2, fadeDuration2));
+    }
 
-        for (int s = 0; s < sentences.Length; s++)
+    IEnumerator RunDialogue(TMP_Text textComp, string text,
+                            string triggerPhrase1 = "", GameObject objectToActivate1 = null, float fadeDuration1 = 1f,
+                            string triggerPhrase2 = "", GameObject objectToActivate2 = null, float fadeDuration2 = 1f)
+    {
+        yield return StartCoroutine(TypewriterEffect(textComp, text, dialogueSpeed,
+                                                     triggerPhrase1, objectToActivate1, fadeDuration1,
+                                                     triggerPhrase2, objectToActivate2, fadeDuration2));
+    }
+
+    void SetSpeaker(string name)
+    {
+        if (!string.IsNullOrEmpty(name))
         {
-            string sentence = sentences[s].Trim();
-
-            // Add back the period if missing
-            if (!sentence.EndsWith(".")) sentence += ".";
-
-            foreach (char c in sentence)
-            {
-                textComponent.text += c;
-                yield return new WaitForSeconds(delay);
-            }
-
-            // Only add newline if it’s not the last sentence
-            if (s < sentences.Length - 1)
-            {
-                textComponent.text += "\n";
-                yield return new WaitForSeconds(sentencePause);
-            }
+            charName.text = name;
+            charName.gameObject.SetActive(true);
+            splitter.SetActive(true);
+        }
+        else
+        {
+            charName.text = "";
+            charName.gameObject.SetActive(false);
+            splitter.SetActive(false);
         }
     }
 
-void SetSpeaker(string name)
+    // Fade out audio (with null check and reset like you posted)
+    IEnumerator FadeOutAudio(AudioSource audioSource, float duration)
+    {
+        if (audioSource == null) yield break;
+
+        float startVolume = audioSource.volume;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(startVolume, 0f, elapsed / duration);
+            yield return null;
+        }
+
+        audioSource.Stop();
+        audioSource.volume = startVolume; // reset if needed
+    }
+
+    // Fade-to-black that uses RawImage where possible and falls back to Image
+    IEnumerator FadeToBlackAndHold(float duration, float hold = 0.5f)
+    {
+        if (fadeScreenIn == null)
+        {
+            yield return new WaitForSeconds(duration + hold);
+            yield break;
+        }
+
+        // Try RawImage first
+        RawImage raw = fadeScreenIn.GetComponent<RawImage>();
+        if (raw != null)
+        {
+            Color c = raw.color;
+            c.a = 0f;
+            raw.color = c;
+            fadeScreenIn.SetActive(true);
+
+            float elapsed = 0f;
+            while (elapsed < duration)
+            {
+                elapsed += Time.deltaTime;
+                float alpha = Mathf.SmoothStep(0f, 1f, elapsed / duration);
+                raw.color = new Color(c.r, c.g, c.b, alpha);
+                yield return null;
+            }
+
+            raw.color = new Color(c.r, c.g, c.b, 1f);
+            yield return new WaitForSeconds(hold);
+            yield break;
+        }
+
+        // Fallback to Image
+        Image img = fadeScreenIn.GetComponent<Image>();
+        if (img != null)
+        {
+            Color c = img.color;
+            c.a = 0f;
+            img.color = c;
+            fadeScreenIn.SetActive(true);
+
+            float elapsed = 0f;
+            while (elapsed < duration)
+            {
+                elapsed += Time.deltaTime;
+                float alpha = Mathf.SmoothStep(0f, 1f, elapsed / duration);
+                img.color = new Color(c.r, c.g, c.b, alpha);
+                yield return null;
+            }
+
+            img.color = new Color(c.r, c.g, c.b, 1f);
+            yield return new WaitForSeconds(hold);
+            yield break;
+        }
+
+        // If no RawImage or Image, just wait
+        yield return new WaitForSeconds(duration + hold);
+    }
+
+IEnumerator FadeFromBlack(float duration)
 {
-    if (!string.IsNullOrEmpty(name))
-    {
-        // Set the text
-        charName.GetComponent<TMPro.TMP_Text>().text = name;
+    if (fadeScreenIn == null) yield break;
 
-        // Show both
-        charName.gameObject.SetActive(true);
-        splitter.SetActive(true);
-    }
-    else
-    {
-        // Clear the text
-        charName.GetComponent<TMPro.TMP_Text>().text = "";
+    fadeScreenIn.SetActive(true);
+    RawImage raw = fadeScreenIn.GetComponent<RawImage>();
+    if (raw == null) yield break;
 
-        // Hide both
-        charName.gameObject.SetActive(false);
-        splitter.SetActive(false);
+    Color c = raw.color;
+    c.a = 1f; // start fully black
+    raw.color = c;
+
+    float elapsed = 0f;
+    while (elapsed < duration)
+    {
+        elapsed += Time.deltaTime;
+        float alpha = Mathf.Clamp01(1f - (elapsed / duration));
+        raw.color = new Color(c.r, c.g, c.b, alpha);
+        yield return null;
     }
+
+    raw.color = new Color(c.r, c.g, c.b, 0f);
+    fadeScreenIn.SetActive(false); // hide after fade-out
 }
 
 
-
-
-
-    IEnumerator EventStarter()
+    // ---------- Events (kept content & order intact) ----------
+IEnumerator EventStarter()
+{
+    // start fully black
+    if (fadeScreenIn != null)
     {
-        // event 0
-        yield return new WaitForSeconds(2);
-        fadeScreenIn.SetActive(false);
-        yield return new WaitForSeconds(2);
-        // this is where our text function will go in future tutorial
-        lightRain.Play();
-        mainTextObject.SetActive(true);
-        textToSpeak = "The ritual was complete. Jin Chan opened his eyes. A single drop of rain fell on the newly reborn soil. Then another. One by one, they began to strike the rooftops and old pagodas, drumming like quiet applause. The earth drank them greedily. He felt the water roll down his thick skin, soaking through the folds of his robe. Then a bamboo umbrella opened above him. A man stood beside him. His face looked younger now.";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(tmpText, textToSpeak, 0.03f));  // 0.03 delay can be adjusted
-        nextButton.SetActive(true);
-        eventPos = 1;
+        RawImage raw = fadeScreenIn.GetComponent<RawImage>();
+        if (raw != null) raw.color = new Color(0f,0f,0f,1f);
+        fadeScreenIn.SetActive(true);
+        yield return StartCoroutine(FadeFromBlack(1.8f)); // fade in lebih lambat
 
     }
-    
-        IEnumerator EventOne()
+
+    if (lightRain != null) lightRain.Play();
+    if (mainTextObject != null) mainTextObject.SetActive(true);
+
+    textToSpeak = "The ritual was complete. Jin Chan opened his eyes. ...";
+    yield return StartCoroutine(RunNarration(narrationText, textToSpeak));
+
+    if (nextButton != null) nextButton.SetActive(true);
+    eventPos = 1;
+}
+
+    IEnumerator EventOne()
     {
         // event 13
-        nextButton.SetActive(false);
-        textBox.SetActive(true);
-        overlayFade.FadeIn();
+        if (nextButton != null) nextButton.SetActive(false);
+        if (textBox != null) textBox.SetActive(true);
+        overlayFade?.FadeIn();
         StartCoroutine(FadeInRawImage(charJinChan, 1f));
         ShowDialogue("Jin Chan", "");
         textToSpeak = "\"<i>The rain will wash away the last of the dark energy. After the rain, flowers will bloom.</i>\"";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(dialogueText, textToSpeak, 0.03f, "The rain", charJinChan, 1f));
-        nextButton.SetActive(true);
+        yield return StartCoroutine(RunDialogue(dialogueText, textToSpeak, "The rain", charJinChan, 1f));
+        if (nextButton != null) nextButton.SetActive(true);
         eventPos = 2;
     }
 
-        IEnumerator EventTwo()
+    IEnumerator EventTwo()
     {
         // event 2
-        nextButton.SetActive(false);
-        textBox.SetActive(true);
-        overlayFade.FadeOut();
+        if (nextButton != null) nextButton.SetActive(false);
+        if (textBox != null) textBox.SetActive(true);
+        overlayFade?.FadeOut();
         StartCoroutine(FadeOutRawImage(charJinChan, 1f));
         ShowNarration("");
         textToSpeak = "The villagers, who had watched the ritual in silence, now looked up. Something in their faces had changed. Color had returned to their cheeks. Eyes once hollow with despair now glistened. Shoulders once curled by humility now straightened.";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(narrationText, textToSpeak, 0.03f));  // 0.03 delay can be adjusted
-        nextButton.SetActive(true);
+        yield return StartCoroutine(RunNarration(narrationText, textToSpeak));
+        if (nextButton != null) nextButton.SetActive(true);
         eventPos = 3;
     }
 
-        IEnumerator EventThree()
+    IEnumerator EventThree()
     {
         // event 3
-        nextButton.SetActive(false);
-        textBox.SetActive(true);
-        overlayFade.FadeIn();
+        if (nextButton != null) nextButton.SetActive(false);
+        if (textBox != null) textBox.SetActive(true);
+        overlayFade?.FadeIn();
         StartCoroutine(FadeInRawImage(charElder, 1f));
         ShowDialogue("Elder Man", "");
         textToSpeak = "\"<i>I will wait for them.</i>\"";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(dialogueText, textToSpeak, 0.03f, "I will", charElder, 1f));
-        nextButton.SetActive(true);
+        yield return StartCoroutine(RunDialogue(dialogueText, textToSpeak, "I will", charElder, 1f));
+        if (nextButton != null) nextButton.SetActive(true);
         eventPos = 4;
     }
 
-        IEnumerator EventFour()
+    IEnumerator EventFour()
     {
         // event 4
-        nextButton.SetActive(false);
-        textBox.SetActive(true);
+        if (nextButton != null) nextButton.SetActive(false);
+        if (textBox != null) textBox.SetActive(true);
         StartCoroutine(FadeOutRawImage(charElder, 1f));
         StartCoroutine(FadeInRawImage(charJinChan, 1f));
         ShowNarration("");
         textToSpeak = "A toad felt a gentle tug on his heart. A small dream. He wished Liu Hai could see them too.";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(narrationText, textToSpeak, 0.03f));
-        nextButton.SetActive(true);
+        yield return StartCoroutine(RunNarration(narrationText, textToSpeak));
+        if (nextButton != null) nextButton.SetActive(true);
         eventPos = 5;
     }
 
-        IEnumerator EventFive()
+    IEnumerator EventFive()
     {
         // event 17
-        nextButton.SetActive(false);
-        textBox.SetActive(true);
+        if (nextButton != null) nextButton.SetActive(false);
+        if (textBox != null) textBox.SetActive(true);
         ShowDialogue("Jin Chan", "");
         textToSpeak = "\"<i>Have you heard of Liu Hai?</i>\"";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(dialogueText, textToSpeak, 0.03f));
-        nextButton.SetActive(true);
+        yield return StartCoroutine(RunDialogue(dialogueText, textToSpeak));
+        if (nextButton != null) nextButton.SetActive(true);
         eventPos = 6;
     }
 
-        IEnumerator EventSix()
+    IEnumerator EventSix()
     {
         // event 18
-        nextButton.SetActive(false);
-        textBox.SetActive(true);
+        if (nextButton != null) nextButton.SetActive(false);
+        if (textBox != null) textBox.SetActive(true);
         StartCoroutine(FadeOutRawImage(charJinChan, 1f));
         StartCoroutine(FadeInRawImage(charElder, 1f));
         ShowNarration("");
         textToSpeak = "The man looked off into the distance for a moment.";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(narrationText, textToSpeak, 0.03f));
-        nextButton.SetActive(true);
+        yield return StartCoroutine(RunNarration(narrationText, textToSpeak));
+        if (nextButton != null) nextButton.SetActive(true);
         eventPos = 7;
     }
 
-        IEnumerator EventSeven()
+    IEnumerator EventSeven()
     {
         // event 19
-        nextButton.SetActive(false);
-        textBox.SetActive(true);
+        if (nextButton != null) nextButton.SetActive(false);
+        if (textBox != null) textBox.SetActive(true);
         ShowDialogue("Elder Man", "");
         textToSpeak = "\"<i>Liu Hai came here many years ago. Back when this village was still breathing. He studied in the mountains, there is a monastery.</i>\"";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(dialogueText, textToSpeak, 0.03f));
-        nextButton.SetActive(true);
+        yield return StartCoroutine(RunDialogue(dialogueText, textToSpeak));
+        if (nextButton != null) nextButton.SetActive(true);
         eventPos = 8;
     }
 
     IEnumerator EventEight()
     {
         // event 8
-        nextButton.SetActive(false);
-        textBox.SetActive(true);
+        if (nextButton != null) nextButton.SetActive(false);
+        if (textBox != null) textBox.SetActive(true);
         StartCoroutine(FadeOutRawImage(charElder, 3f));
         ShowNarration("");
         textToSpeak = "Then that is where Jin Chan would go.";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(narrationText, textToSpeak, 0.03f));
-        nextButton.SetActive(true);
+        yield return StartCoroutine(RunNarration(narrationText, textToSpeak));
+        if (nextButton != null) nextButton.SetActive(true);
         eventPos = 9;
     }
 
-        IEnumerator EventNine()
+    IEnumerator EventNine()
     {
         // event 21
-        nextButton.SetActive(false);
-        textBox.SetActive(true);
+        if (nextButton != null) nextButton.SetActive(false);
+        if (textBox != null) textBox.SetActive(true);
         StartCoroutine(FadeInRawImage(charJinChan, 1f));
         ShowDialogue("Jin Chan", "");
         textToSpeak = "\"<i>Thank you.</i>\"";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(dialogueText, textToSpeak, 0.03f));
-        nextButton.SetActive(true);
+        yield return StartCoroutine(RunDialogue(dialogueText, textToSpeak));
+        if (nextButton != null) nextButton.SetActive(true);
         eventPos = 10;
     }
 
-        IEnumerator EventTen()
-    {
-        // event 22
-        nextButton.SetActive(false);
-        textBox.SetActive(true);
-        overlayFade.FadeOut();
-        StartCoroutine(FadeOutRawImage(charJinChan, 1f));
-        ShowNarration("");
-        textToSpeak = "The elder said nothing more. He simply handed the bamboo umbrella to Jin Chan. The rain was already beginning to fade. It was time to move on.";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(narrationText, textToSpeak, 0.03f));
-        nextButton.SetActive(true);
-        SceneManager.LoadScene("CalligraphyMonastery");
-    }
+IEnumerator EventTen()
+{
+    nextButton.SetActive(false);
+    textBox.SetActive(true);
+
+    // Tampilkan narasi
+    ShowNarration("");
+    textToSpeak = "The elder said nothing more. He simply handed the bamboo umbrella to Jin Chan. The rain was already beginning to fade. It was time to move on.";
+    yield return StartCoroutine(RunNarration(narrationText, textToSpeak));
+
+    // Fade audio
+    if (bgMusic != null) yield return StartCoroutine(FadeOutAudio(bgMusic, 1f));
+    if (lightRain != null) yield return StartCoroutine(FadeOutAudio(lightRain, 1f));
+
+    // Langsung fade ke black tanpa delay
+    yield return StartCoroutine(FadeToBlackAndHold(1f, 0f)); // fade 1 detik, hold 0 detik
+
+    // Hide semua objek
+    textBox.SetActive(false);
+    charName.gameObject.SetActive(false);
+    splitter.SetActive(false);
+    charJinChan.SetActive(false);
+    charElder.SetActive(false);
+    backgroundImage.gameObject.SetActive(false);
+    backgroundOverlayImage.gameObject.SetActive(false);
+
+    // Load scene baru
+    SceneManager.LoadScene("CalligraphyMonastery");
+}
 
 
+    // ---------- NextButton (clean switch) ----------
     public void NextButton()
     {
-        if (eventPos == 1)
+        switch (eventPos)
         {
-            StartCoroutine(EventOne());
+            case 1: StartCoroutine(EventOne()); break;
+            case 2: StartCoroutine(EventTwo()); break;
+            case 3: StartCoroutine(EventThree()); break;
+            case 4: StartCoroutine(EventFour()); break;
+            case 5: StartCoroutine(EventFive()); break;
+            case 6: StartCoroutine(EventSix()); break;
+            case 7: StartCoroutine(EventSeven()); break;
+            case 8: StartCoroutine(EventEight()); break;
+            case 9: StartCoroutine(EventNine()); break;
+            case 10: StartCoroutine(EventTen()); break;
+            default: break;
         }
-        if (eventPos == 2)
-        {
-            StartCoroutine(EventTwo());
-        }
-        if (eventPos == 3)
-        {
-            StartCoroutine(EventThree());
-        }
-        if (eventPos == 4)
-        {
-            StartCoroutine(EventFour());
-        }
-        if (eventPos == 5)
-        {
-            StartCoroutine(EventFive());
-        }
-        if (eventPos == 6)
-        {
-            StartCoroutine(EventSix());
-        }
-        if (eventPos == 7)
-        {
-            StartCoroutine(EventSeven());
-        }
-        if (eventPos == 8)
-        {
-            StartCoroutine(EventEight());
-        }
-        if (eventPos == 9)
-        {
-            StartCoroutine(EventNine());
-        }
-        if (eventPos == 10)
-        {
-            StartCoroutine(EventTen());
-        }
-
     }
-
-
-
 }

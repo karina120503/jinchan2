@@ -86,32 +86,38 @@ public class MapZoomController : MonoBehaviour
         StartCoroutine(FadeAndLoad(pendingSceneName));
     }
 
-    // Fade coroutine + actual load (respects testMode)
-    private IEnumerator FadeAndLoad(string sceneName)
+// Fade coroutine + actual load (respects testMode)
+private IEnumerator FadeAndLoad(string sceneName)
+{
+    if (fadeImage != null)
     {
-        if (fadeImage != null)
-        {
-            fadeImage.raycastTarget = true;
-            Color c = fadeImage.color;
-            float elapsed = 0f;
-            while (elapsed < fadeDuration)
-            {
-                elapsed += Time.deltaTime;
-                c.a = Mathf.Clamp01(elapsed / fadeDuration);
-                fadeImage.color = c;
-                yield return null;
-            }
-        }
+        fadeImage.raycastTarget = true;
+        Color c = fadeImage.color;
+        float elapsed = 0f;
 
-        if (!testMode)
+        // fade to black
+        while (elapsed < fadeDuration)
         {
-            SceneManager.LoadScene(sceneName);
-        }
-        else
-        {
-            Debug.Log("[TestMode] Would load scene: " + sceneName);
+            elapsed += Time.deltaTime;
+            c.a = Mathf.Clamp01(elapsed / fadeDuration);
+            fadeImage.color = c;
+            yield return null;
         }
     }
+
+    // ⏳ NEW: short pause to let music fade finish before loading next scene
+    yield return new WaitForSeconds(1f);  // tweak between 0.5f–1.5f depending on your music fade duration
+
+    if (!testMode)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+    else
+    {
+        Debug.Log("[TestMode] Would load scene: " + sceneName);
+    }
+}
+
 
     // Smoothly zoom to a world point and then show UI (Start/Back) when done
     private IEnumerator SmoothZoomToPoint(Vector3 worldTargetPos, float targetScale)

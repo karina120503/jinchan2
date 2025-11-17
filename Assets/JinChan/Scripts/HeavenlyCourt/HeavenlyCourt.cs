@@ -8,6 +8,7 @@ public class HeavenlyCourt : MonoBehaviour
 {
 
     public GameObject fadeScreenIn;
+    public GameObject fadeScreenInFinal;
     public GameObject textBox;
     public GameObject charJinChan;
     public GameObject charLiuHai;
@@ -272,53 +273,67 @@ IEnumerator GlowPulse(Image img, float pulseSpeed = 2f, float maxAlphaStrength =
 
 IEnumerator EventStarter()
 {
-    // 0️⃣ Brief delay before starting
+    // 0️⃣ Initial brief delay
     yield return new WaitForSeconds(1f);
 
     if (fadeScreenIn != null && chapterTitle != null)
     {
+        // Ensure objects are active
         fadeScreenIn.SetActive(true);
         chapterTitle.SetActive(true);
 
+        // Get components safely
         RawImage fadeImg = fadeScreenIn.GetComponent<RawImage>();
         CanvasGroup titleGroup = chapterTitle.GetComponent<CanvasGroup>();
         Image titleImg = chapterTitle.GetComponent<Image>();
 
-        if (fadeImg != null && titleGroup != null)
+        if (fadeImg == null)
         {
-            // Initial state: black fully opaque, title fully visible
-            fadeImg.color = new Color(0f, 0f, 0f, 1f);
-            titleGroup.alpha = 1f;
-
-            // Start glow immediately
-            if (titleImg != null)
-                StartCoroutine(GlowPulse(titleImg, 2f, 0.5f, 0f));
-
-            // Hold time before fade
-            float holdTime = 2.5f;   // duration fully visible
-            float fadeDuration = 3f; // fade out duration
-            float overlap = 0.5f;    // start fade slightly before hold ends
-            yield return new WaitForSeconds(holdTime - overlap);
-
-            // Fade both black screen and title together using SmoothStep
-            float elapsed = 0f;
-            while (elapsed < fadeDuration)
-            {
-                elapsed += Time.deltaTime;
-                float t = Mathf.Clamp01(elapsed / fadeDuration);
-                float smooth = Mathf.SmoothStep(1f, 0f, t);
-
-                fadeImg.color = new Color(0f, 0f, 0f, smooth);
-                titleGroup.alpha = smooth;
-                yield return null;
-            }
-
-            // Ensure fully invisible
-            fadeImg.color = new Color(0f, 0f, 0f, 0f);
-            titleGroup.alpha = 0f;
-            fadeScreenIn.SetActive(false);
-            chapterTitle.SetActive(false);
+            Debug.LogWarning("fadeScreenIn needs a RawImage component!");
+            yield break;
         }
+
+        if (titleGroup == null)
+        {
+            // Add CanvasGroup dynamically if missing
+            titleGroup = chapterTitle.AddComponent<CanvasGroup>();
+        }
+
+        // Initial alpha setup
+        fadeImg.color = new Color(0f, 0f, 0f, 1f);
+        titleGroup.alpha = 1f;
+
+        // Start title glow if it exists
+        if (titleImg != null)
+            StartCoroutine(GlowPulse(titleImg, 2f, 0.5f, 0f));
+
+        // Hold time before fade
+        float holdTime = 2.5f;
+        float fadeDuration = 3f;
+        float overlap = 0.5f;
+
+        yield return new WaitForSeconds(holdTime - overlap);
+
+        // Fade both black screen and title together
+        float elapsed = 0f;
+        while (elapsed < fadeDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / fadeDuration);
+            float smooth = Mathf.SmoothStep(1f, 0f, t);
+
+            fadeImg.color = new Color(0f, 0f, 0f, smooth);
+            titleGroup.alpha = smooth;
+
+            yield return null;
+        }
+
+        // Ensure fully invisible at the end
+        fadeImg.color = new Color(0f, 0f, 0f, 0f);
+        titleGroup.alpha = 0f;
+
+        fadeScreenIn.SetActive(false);
+        chapterTitle.SetActive(false);
     }
 
     // 1️⃣ Short pause before narration
@@ -381,7 +396,7 @@ IEnumerator EventStarter()
         nextButton.SetActive(false);
         textBox.SetActive(true);
 
-        textToSpeak = "It was indeed Liu Hai. There could be no mistake. On the terrace, by the water’s edge, he sat in meditation, the very air around him hushed, as if hesitant to disturb the monk. Toad approached at arm's length, hesitating to peer into the seemingly sleeping face. Suddenly, the man's lips curled into a smile and Liu Hai opened his eyes. Jin Chang twitched back involuntarily.";
+        textToSpeak = "It was indeed Liu Hai. There could be no mistake. On the terrace, by the water’s edge, he sat in meditation, the very air around him hushed, as if hesitant to disturb the monk. Toad approached at arm's length, hesitating to peer into the seemingly sleeping face. Suddenly, the man's lips curled into a smile and Liu Hai opened his eyes. Jin Chan twitched back involuntarily.";
         TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
         yield return StartCoroutine(TypewriterEffect(tmpText, textToSpeak, 0.03f));  // 0.03 delay can be adjusted
         nextButton.SetActive(true);
@@ -413,7 +428,7 @@ IEnumerator EventStarter()
         textBox.SetActive(true);
 
         ShowNarration("");
-        textToSpeak = "He appeared to be glad to see him. Suddenly, all of the ethereal aura was stripped away from him, and a young boy was sitting in front of Jin Chan, as if waiting for his brother, not the monster he had barely defeated. Jin Chang didn't know how to reply. He had to prove to everyone he met along the way that he was not the same person he was before. But it was as if the monk already knew.";
+        textToSpeak = "He appeared to be glad to see him. Suddenly, all of the ethereal aura was stripped away from him, and a young boy was sitting in front of Jin Chan, as if waiting for his brother, not the monster he had barely defeated. Jin Chan didn't know how to reply. He had to prove to everyone he met along the way that he was not the same person he was before. But it was as if the monk already knew.";
         TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
         yield return StartCoroutine(TypewriterEffect(narrationText, textToSpeak, 0.03f));  // 0.03 delay can be adjusted
         nextButton.SetActive(true);
@@ -624,7 +639,7 @@ IEnumerator EventStarter()
         nextButton.SetActive(false);
         textBox.SetActive(true);
         ShowDialogue("Jin Chan", "");
-        textToSpeak = "\"<i>I'll stay</i>\"";
+        textToSpeak = "\"<i>I'll stay.</i>\"";
         TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
         yield return StartCoroutine(TypewriterEffect(dialogueText, textToSpeak, 0.03f));
 
@@ -634,29 +649,110 @@ IEnumerator EventStarter()
 
 IEnumerator EventTwenty()
 {
-    // 1. Hide dialogue UI
-    textBox.SetActive(false);
-    nextButton.SetActive(false);
+    // 1️⃣ Hide dialogue UI
+    if (textBox != null) textBox.SetActive(false);
+    if (nextButton != null) nextButton.SetActive(false);
 
-    // 2. Fade screen fully to black
-    fadeScreenIn.SetActive(true);
-    Animator fadeAnimator = fadeScreenIn.GetComponent<Animator>();
-    fadeAnimator.SetTrigger("FadeOut"); // make sure FadeOut = transparent → black
-    yield return new WaitForSeconds(2f); // wait until screen is black
+    // 2️⃣ Smooth fade to black
+    if (fadeScreenInFinal != null)
+    {
+        fadeScreenInFinal.SetActive(true);
 
-    // 3. Show narration text in middle
-    narrationFinalText.gameObject.SetActive(true);
-    narrationFinalText.alignment = TextAlignmentOptions.Center;
-    narrationFinalText.text = "";
-    string narration =
-        "From that moment on, their path continued through a thousand stories, many of which became legends.\n" +
-        "Some of those legends still live to this day.\n[END.]";
+        Animator fadeAnimator = fadeScreenInFinal.GetComponent<Animator>();
+        if (fadeAnimator != null) fadeAnimator.enabled = false;
 
-    yield return StartCoroutine(TypewriterEffect(narrationFinalText, narration, 0.04f));
+        CanvasGroup cg = fadeScreenInFinal.GetComponent<CanvasGroup>();
+        Image fadeImg = fadeScreenInFinal.GetComponent<Image>();
+        RawImage fadeRaw = fadeScreenInFinal.GetComponent<RawImage>();
 
-    // 4. (Optional) no next button, because it's the end
+        // Start fully transparent
+        if (cg != null) cg.alpha = 0f;
+        else if (fadeImg != null) fadeImg.color = new Color(0, 0, 0, 0);
+        else if (fadeRaw != null) fadeRaw.color = new Color(0, 0, 0, 0);
+
+        // Fade coroutine
+        float fadeDuration = 1f;
+        float elapsed = 0f;
+        while (elapsed < fadeDuration)
+        {
+            elapsed += Time.deltaTime;
+            float alpha = Mathf.Clamp01(elapsed / fadeDuration);
+            if (cg != null) cg.alpha = alpha;
+            else if (fadeImg != null) fadeImg.color = new Color(0,0,0,alpha);
+            else if (fadeRaw != null) fadeRaw.color = new Color(0,0,0,alpha);
+            yield return null;
+        }
+
+        // Ensure fully black
+        if (cg != null) cg.alpha = 1f;
+        else if (fadeImg != null) fadeImg.color = new Color(0,0,0,1f);
+        else if (fadeRaw != null) fadeRaw.color = new Color(0,0,0,1f);
+    }
+
+    yield return new WaitForSeconds(1.5f); // hold fully black
+
+    // 3️⃣ Show final narration (smaller font, slower typewriter)
+    if (narrationFinalText != null)
+    {
+        narrationFinalText.gameObject.SetActive(true);
+        narrationFinalText.alignment = TextAlignmentOptions.Center;
+        narrationFinalText.fontSize = 65;
+        narrationFinalText.text = "";
+
+        string narration =
+            "From that moment on, their path continued through a thousand stories, many of which became legends.\n\n" +
+            "Some of those legends still live to this day.\n\n";
+
+        yield return StartCoroutine(TypewriterEffect(narrationFinalText, narration, 0.06f));
+    }
+
+    yield return new WaitForSeconds(2f); // pause before "The End"
+
+    // 4️⃣ Show "The End"
+    if (narrationFinalText != null)
+    {
+        narrationFinalText.fontSize = 80;
+        string theEndText = "The End";
+        yield return StartCoroutine(TypewriterEffect(narrationFinalText, theEndText, 0.08f));
+
+        yield return new WaitForSeconds(2.5f); // let it sink in
+    }
+
+    // 5️⃣ Show credits
+    if (narrationFinalText != null)
+    {
+        narrationFinalText.fontSize = 80;
+        narrationFinalText.alignment = TextAlignmentOptions.Top;
+
+        string creditsText =
+            "Credits\n\n" +
+            "Chechina Anna Mariia — Producer, Programmer, Writer\n" +
+            "Tsalai Katherine — Lead Artist, Level Designer\n" +
+            "Marryane Tasya Karina — Level Design, Programmer, Sound Engineer\n\n" +
+            "Thank you for playing!";
+
+        narrationFinalText.text = creditsText;
+
+        RectTransform rt = narrationFinalText.GetComponent<RectTransform>();
+        if (rt != null)
+        {
+            // Scroll from below screen to above total text height
+            Vector2 startPos = new Vector2(rt.anchoredPosition.x, -Screen.height);
+            Vector2 endPos = new Vector2(rt.anchoredPosition.x, rt.sizeDelta.y + Screen.height);
+            float scrollTime = 12f;
+            float elapsed = 0f;
+
+            while (elapsed < scrollTime)
+            {
+                elapsed += Time.deltaTime;
+                rt.anchoredPosition = Vector2.Lerp(startPos, endPos, elapsed / scrollTime);
+                yield return null;
+            }
+        }
+    }
+
+    // fadeScreenInFinal stays active until you decide to remove it
 }
-
 
     public void NextButton()
     {
@@ -740,16 +836,6 @@ IEnumerator EventTwenty()
         {
             StartCoroutine(EventTwenty());
         }
-
-
-
-
-
-
-
-
-
-
 
     }
 

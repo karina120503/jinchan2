@@ -1,29 +1,43 @@
 using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Monastery2 : MonoBehaviour
 {
+    [Header("UI Elements")]
     public GameObject fadeScreenIn;
     public GameObject textBox;
     public GameObject charJinChan;
     public GameObject charMonk;
-    public OverlayFade9 overlayFade;
     public TMP_Text narrationText;
     public TMP_Text dialogueText;
     public TMP_Text charName;
     public GameObject splitter;
-    [SerializeField] string textToSpeak;
-    [SerializeField] int currentTextLength;
-    [SerializeField] int textLength;
-    [SerializeField] GameObject mainTextObject;
-    [SerializeField] GameObject nextButton;
-    [SerializeField] int eventPos = 0;
-    [SerializeField] private Image backgroundImage;
+    public GameObject mainTextObject;
+    public GameObject nextButton;
 
+    [Header("Overlay & Audio")]
+    public OverlayFade9 overlayFade;
+public AudioSource bgMusic; // your music source
 
+    [Header("Settings")]
+    public float narrationSpeed = 0.01f;
+    public float dialogueSpeed = 0.03f;
+    public float fadeDuration = 2.5f;
+
+    private int eventPos = 0;
+    private string textToSpeak;
+
+void Start()
+{
+    charName.gameObject.SetActive(false);
+    splitter.SetActive(false);
+    StartCoroutine(InitialFadeIn());
+}
+
+    #region UI Functions
     public void ShowNarration(string text)
     {
         charName.gameObject.SetActive(false);
@@ -44,37 +58,24 @@ public class Monastery2 : MonoBehaviour
         charName.text = speaker;
         dialogueText.text = text;
     }
+    #endregion
 
-    void Start()
-    {
-        charName.gameObject.SetActive(false);
-        splitter.SetActive(false);
-        StartCoroutine(EventStarter());
-    }
-
-    void Update()
-    {
-        // Keep your old update code
-        textLength = TextCreator.charCount;
-
-    }
-
-
+    #region Fade Helpers
     IEnumerator FadeInRawImage(GameObject obj, float duration)
     {
         RawImage img = obj.GetComponent<RawImage>();
-        if (img == null) yield break; // No RawImage found
+        if (img == null) yield break;
 
         Color c = img.color;
         c.a = 0f;
         img.color = c;
         obj.SetActive(true);
 
-        float time = 0f;
-        while (time < duration)
+        float t = 0f;
+        while (t < duration)
         {
-            time += Time.deltaTime;
-            c.a = Mathf.Clamp01(time / duration);
+            t += Time.deltaTime;
+            c.a = Mathf.Clamp01(t / duration);
             img.color = c;
             yield return null;
         }
@@ -89,11 +90,11 @@ public class Monastery2 : MonoBehaviour
         c.a = 1f;
         img.color = c;
 
-        float time = 0f;
-        while (time < duration)
+        float t = 0f;
+        while (t < duration)
         {
-            time += Time.deltaTime;
-            c.a = Mathf.Clamp01(1 - (time / duration));
+            t += Time.deltaTime;
+            c.a = Mathf.Clamp01(1 - t / duration);
             img.color = c;
             yield return null;
         }
@@ -101,189 +102,201 @@ public class Monastery2 : MonoBehaviour
         obj.SetActive(false);
     }
 
+    IEnumerator FadeCanvasGroup(CanvasGroup group, float start, float end, float duration)
+    {
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            group.alpha = Mathf.Lerp(start, end, elapsed / duration);
+            yield return null;
+        }
+        group.alpha = end;
+    }
 
-    IEnumerator TypewriterEffect(
-        TMP_Text textComponent,
-        string fullText,
-        float delay,
-        string triggerPhrase1 = "", GameObject objectToActivate1 = null, float fadeDuration1 = 1f,
-        string triggerPhrase2 = "", GameObject objectToActivate2 = null, float fadeDuration2 = 1f)
+    IEnumerator FadeAudio(AudioSource audio, float startVol, float endVol, float duration)
+    {
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            audio.volume = Mathf.Lerp(startVol, endVol, elapsed / duration);
+            yield return null;
+        }
+        audio.volume = endVol;
+    }
+    #endregion
+
+    #region Typewriter
+    IEnumerator TypewriterEffect(TMP_Text textComponent, string fullText, float delay)
     {
         textComponent.maxVisibleCharacters = 0;
         textComponent.text = fullText;
-
         for (int i = 1; i <= fullText.Length; i++)
         {
             textComponent.maxVisibleCharacters = i;
-
-            // First trigger
-            if (!string.IsNullOrEmpty(triggerPhrase1) && objectToActivate1 != null)
-            {
-                if (i >= fullText.IndexOf(triggerPhrase1) && !objectToActivate1.activeSelf)
-                {
-                    StartCoroutine(FadeInRawImage(objectToActivate1, fadeDuration1));
-                }
-            }
-
-            // Second trigger
-            if (!string.IsNullOrEmpty(triggerPhrase2) && objectToActivate2 != null)
-            {
-                if (i >= fullText.IndexOf(triggerPhrase2) && !objectToActivate2.activeSelf)
-                {
-                    StartCoroutine(FadeInRawImage(objectToActivate2, fadeDuration2));
-                }
-            }
-
             yield return new WaitForSeconds(delay);
         }
-
-        textLength = fullText.Length;
     }
+    #endregion
 
-    IEnumerator TypewriterEffectParagraphs(TMP_Text textComponent, string fullText, float delay, float sentencePause)
-    {
-        textComponent.text = "";
-        string[] sentences = fullText.Split(new char[] { '.' }, System.StringSplitOptions.RemoveEmptyEntries);
-
-        for (int s = 0; s < sentences.Length; s++)
-        {
-            string sentence = sentences[s].Trim();
-
-            // Add back the period if missing
-            if (!sentence.EndsWith(".")) sentence += ".";
-
-            foreach (char c in sentence)
-            {
-                textComponent.text += c;
-                yield return new WaitForSeconds(delay);
-            }
-
-            // Only add newline if it’s not the last sentence
-            if (s < sentences.Length - 1)
-            {
-                textComponent.text += "\n";
-                yield return new WaitForSeconds(sentencePause);
-            }
-        }
-    }
-
-    void SetSpeaker(string name)
-    {
-        if (!string.IsNullOrEmpty(name))
-        {
-            // Set the text
-            charName.GetComponent<TMPro.TMP_Text>().text = name;
-
-            // Show both
-            charName.gameObject.SetActive(true);
-            splitter.SetActive(true);
-        }
-        else
-        {
-            // Clear the text
-            charName.GetComponent<TMPro.TMP_Text>().text = "";
-
-            // Hide both
-            charName.gameObject.SetActive(false);
-            splitter.SetActive(false);
-        }
-    }
+    #region Events
 
 
-
-    IEnumerator EventStarter()
-    {
-        // event 0
-        yield return new WaitForSeconds(2);
-        fadeScreenIn.SetActive(false);
-        yield return new WaitForSeconds(2);
-        // this is where our text function will go in future tutorial
-        mainTextObject.SetActive(true);
-        textToSpeak = "The scent of ink still hung in the air. Broad brushstrokes shimmered faintly, not yet dried upon the paper. Jin Chan gently set the brush on its stand, beside the unrolled scroll. It felt as though everything inside had been poured into it — every thought, every memory, every fragment of guilt. Within him, as outside him — nothing remained. Toad flinched slightly at the foreign voice that broke the quiet space.";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(tmpText, textToSpeak, 0.03f));  // 0.03 delay can be adjusted
-        nextButton.SetActive(true);
-        eventPos = 1;
-
-    }
-
-
-IEnumerator EventOne()
+// Fade in from black at the very start
+IEnumerator InitialFadeIn(float fadeDuration = 2.5f)
 {
-    // Dialogue: Jin Chan
-    nextButton.SetActive(false);
-    ShowDialogue("Monk", "");
-    StartCoroutine(FadeInRawImage(charMonk, 1f));
-    overlayFade.FadeIn();
-    textToSpeak = "\"<i>There is one last step to take...</i>\"";
-    // (If you want to trigger on a phrase, change "The toad" to a phrase that actually exists in this line.)
-    yield return StartCoroutine(TypewriterEffect(dialogueText, textToSpeak, 0.03f));
-    nextButton.SetActive(true);
-    eventPos = 2;
+    if (fadeScreenIn == null) yield break;
+
+    fadeScreenIn.SetActive(true);
+    Image fadeImg = fadeScreenIn.GetComponent<Image>();
+    if (fadeImg == null) yield break;
+
+    fadeImg.color = new Color(0f, 0f, 0f, 1f); // fully black
+
+    float elapsed = 0f;
+    while (elapsed < fadeDuration)
+    {
+        elapsed += Time.deltaTime;
+        float alpha = Mathf.Clamp01(1 - (elapsed / fadeDuration));
+        fadeImg.color = new Color(0f, 0f, 0f, alpha);
+        yield return null;
+    }
+
+    fadeImg.color = new Color(0f, 0f, 0f, 0f);
+    fadeScreenIn.SetActive(false);
+
+    // Now start your EventStarter
+    StartCoroutine(EventStarter());
 }
 
-        IEnumerator EventTwo()
+// Restored EventStarter coroutine
+IEnumerator EventStarter()
+{
+    // initial brief pause before narration
+    yield return new WaitForSeconds(0.5f);
+
+    if (mainTextObject != null)
+        mainTextObject.SetActive(true);
+
+    // narration text
+    textToSpeak = "The scent of ink still hung in the air. Broad brushstrokes shimmered faintly, not yet dried upon the paper. Jin Chan gently set the brush on its stand, beside the unrolled scroll. It felt as though everything inside had been poured into it — every thought, every memory, every fragment of guilt. Within him, as outside him — nothing remained. Toad flinched slightly at the foreign voice that broke the quiet space.";
+
+    TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
+    yield return StartCoroutine(TypewriterEffect(tmpText, textToSpeak, 0.01f));  // narration fast
+
+    nextButton.SetActive(true);
+    eventPos = 1;
+}
+
+
+    IEnumerator EventOne()
+    {
+        nextButton.SetActive(false);
+        ShowDialogue("Monk", "");
+        StartCoroutine(FadeInRawImage(charMonk, 1f));
+        overlayFade.FadeIn();
+
+        textToSpeak = "\"<i>There is one last step to take...</i>\"";
+        yield return StartCoroutine(TypewriterEffect(dialogueText, textToSpeak, dialogueSpeed));
+
+        nextButton.SetActive(true);
+        eventPos = 2;
+    }
+
+    IEnumerator EventTwo()
     {
         nextButton.SetActive(false);
         textBox.SetActive(true);
         ShowNarration("");
+
         textToSpeak = "A wide sleeve moved gently through the air as the monk gestured upward, to where the cliffs vanished into clouds.";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(narrationText, textToSpeak, 0.03f));  // 0.03 delay can be adjusted
+        yield return StartCoroutine(TypewriterEffect(narrationText, textToSpeak, narrationSpeed));
+
         nextButton.SetActive(true);
         eventPos = 3;
     }
 
-        IEnumerator EventThree()
+    IEnumerator EventThree()
     {
-        // event 3
         nextButton.SetActive(false);
-        textBox.SetActive(true);
         ShowDialogue("Monk", "");
-
         textToSpeak = "\"<i>“His dwelling lies where no stairs lead. But you know the way. Liu Hai awaits you.”</i>\"";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(dialogueText, textToSpeak, 0.03f));
+        yield return StartCoroutine(TypewriterEffect(dialogueText, textToSpeak, dialogueSpeed));
+
         nextButton.SetActive(true);
-        eventPos = 4; 
+        eventPos = 4;
     }
 
-        IEnumerator EventFour()
+IEnumerator EventFour()
+{
+    nextButton.SetActive(false);
+    textBox.SetActive(true);
+    ShowNarration("");
+    StartCoroutine(FadeOutRawImage(charMonk, 4f));
+    overlayFade.FadeOut();
+
+    textToSpeak = "Toad nodded. Thanking the monks, he stepped outside the hall, webbed paws treading the damp ground as the fog around him grew thicker and thicker. A white veil obscured his gaze like another membrane. And soon he realized: he was no longer walking on his own.";
+    TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
+    yield return StartCoroutine(TypewriterEffect(narrationText, textToSpeak, 0.01f)); // fast narration
+
+    // Show the last Next button, but **do NOT load the scene yet**
+    nextButton.SetActive(true);
+
+    eventPos = 5; // mark as last event
+}
+
+
+IEnumerator FadeOutToBlackAndLoadScene(string sceneName, float duration = 2.5f)
+{
+    if (fadeScreenIn == null) yield break;
+
+    fadeScreenIn.SetActive(true);
+    Image fadeImg = fadeScreenIn.GetComponent<Image>();
+    if (fadeImg == null) yield break;
+
+    // Start transparent
+    fadeImg.color = new Color(0f, 0f, 0f, 0f);
+
+    float elapsed = 0f;
+    float startVolume = bgMusic.volume; // get current BGM volume
+
+    while (elapsed < duration)
     {
-        // event 4
-        nextButton.SetActive(false);
-        textBox.SetActive(true);
-        ShowNarration("");
-        StartCoroutine(FadeOutRawImage(charMonk, 4f));
-        overlayFade.FadeOut();
-        textToSpeak = "Toad nodded. Thanking the monks, he stepped outside the hall, webbed paws treading the damp ground as the fog around him grew thicker and thicker. A white veil obscured his gaze like another membrane. And soon he realized: he was no longer walking on his own.";
-        TMP_Text tmpText = textBox.GetComponent<TMP_Text>();
-        yield return StartCoroutine(TypewriterEffect(narrationText, textToSpeak, 0.03f)); 
-        nextButton.SetActive(true);
-        SceneManager.LoadScene("HeavenlyCourt");
+        elapsed += Time.deltaTime;
+        float alpha = Mathf.Clamp01(elapsed / duration);
+        fadeImg.color = new Color(0f, 0f, 0f, alpha);
+
+        // Fade out BGM at the same time
+        if (bgMusic != null)
+        {
+            bgMusic.volume = Mathf.Lerp(startVolume, 0f, elapsed / duration);
+        }
+
+        yield return null;
     }
 
-    public void NextButton()
+    fadeImg.color = new Color(0f, 0f, 0f, 1f);
+
+    // Stop music completely
+    if (bgMusic != null) bgMusic.Stop();
+
+    SceneManager.LoadScene(sceneName);
+}
+
+
+    #endregion
+
+public void NextButton()
+{
+    switch (eventPos)
     {
-        if (eventPos == 1)
-        {
-            StartCoroutine(EventOne());
-        }
-        if (eventPos == 2)
-        {
-            StartCoroutine(EventTwo());
-        }
-        if (eventPos == 3)
-        {
-            StartCoroutine(EventThree());
-        }
-        if (eventPos == 4)
-        {
-            StartCoroutine(EventFour());
-        }
-
+        case 1: StartCoroutine(EventOne()); break;
+        case 2: StartCoroutine(EventTwo()); break;
+        case 3: StartCoroutine(EventThree()); break;
+        case 4: StartCoroutine(EventFour()); break;
+        case 5: StartCoroutine(FadeOutToBlackAndLoadScene("HeavenlyCourt")); break; // now triggered **after click**
     }
+}
 
-}   
-
-    
+}
